@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="body-bg">
+            <div class="body-overlay">
+                <div class="container">
+                    <div class="head pt-5 mb-5 d-flex align-items-center justify-content-center">
+                        <div class="nav text-center">
+                            <ul>
+                                <li onclick="animateAbout()">Home</li>
+                                <li onclick="animateContent()">Contact</li>
+                            </ul>
+                        </div>
+
+                        <div class="logo text-center">
+                            <i class="fa-solid fa-cloud text-info fa-5x"></i>
+                            <h1 class="text-white">Weather</h1>
+                        </div>
+                    </div>
+    
+                    <div class="search-content">
+                        <form class="search mb-5 d-flex">
+                            <input type="text" id="locInput" placeholder="Find your location">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+        
+                        <div class="content d-flex">
+                            <div class="dayOne item-width">
+                                
+                            </div>
+        
+                            <div class="dayTwo item-width">
+                                
+                            </div>
+        
+                            <div class="dayThree item-width">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aboutContent d-none">
+                        <div class="myImg text-center mb-5">
+                            <img src="images/2.jpg" alt="" class="w-25 mb-4">
+                            <h1 class="name">AHMED HAMZA</h1>
+                            <h2 class="text-white">Front-end developer | Angular.js</h2>
+                        </div>
+
+                        <div class="aboutInfo text-white w-75 m-auto d-flex justify-content-between">
+                            <div class="left">
+                                <ul>
+                                    <li><span class="fw-bold text-warning">Gmail:</span> ahmd7mza@gmail.com</li>
+                                    <li><span class="fw-bold text-warning">Phone:</span> 01091757071</li>
+                                </ul>
+                            </div>
+
+                            <div class="right">
+                                <ul>
+                                    <li><span class="fw-bold text-warning">LinkedIn:</span> www.linkedin.com/in/ahmedhamza22</li>
+                                    <li><span class="fw-bold text-warning">github:</span> https://github.com/AhmedHamza7</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".item-width"), {
+            max: 10,
+            speed: 800,
+            glare:true, 
+            "max-glare":1,
+        });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
