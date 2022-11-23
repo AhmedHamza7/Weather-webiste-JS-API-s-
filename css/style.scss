@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'title';
-    src:url(../Chakra_Petch/ChakraPetch-Bold.ttf);
+    src:url(../fonts/Chakra_Petch/ChakraPetch-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'title';
-    src:url(../Chakra_Petch/ChakraPetch-Regular.ttf);
+    src:url(../fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
     font-weight:normal;
 }
 
 
 @font-face {
     font-family: 'main';
-    src:url(../Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
+    src:url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf)
 }
 
 * {
@@ -30,7 +30,7 @@ h1 {
 }
 .body-bg {
     background: {
-        image: url("../25501.jpg");
+        image: url("../images/25501.jpg");
         position: center;
         repeat: no-repeat;
         size:cover;
@@ -113,9 +113,6 @@ h1 {
         transition: 0.3s all ease;
     }
 }
-
-
-
 
   
   .dayOne, .dayTwo,.dayThree {
@@ -224,7 +221,7 @@ h1 {
     top: 0;
     left:0;
     bottom: 0;right: 0;
-    background: url("../rain.png");
+    background: url("../images/rain.png");
     height: 100%;
     animation: rain 0.5s linear infinite;
     transition: 0.3s all ease;
@@ -283,7 +280,7 @@ h1 {
 .sun { 
     position: absolute;
       top:-100px;
-      left:350px;
+      left:70%;
       right:0;
       bottom:0;
       margin: auto;  
@@ -400,6 +397,27 @@ h1 {
   }
 
 
-
-
-  
+  @media (max-width:1200px){
+    .body-overlay, .body-bg {
+        height:100%;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .item-width{
+        width: 47% !important;
+        margin-bottom: 20px;
+    }
+}
+  @media (max-width:992px){
+    .body-overlay, .body-bg {
+        height:100%;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .item-width{
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
